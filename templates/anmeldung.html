@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anmelden - Medi+</title>
+    <style>
+        body{
+            background-color: aqua;
+        }
+        nav{
+            background-color: brown;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 10px;
+        }
+        input{
+            padding-right: 10px;
+        }
+        .input-abschicken{
+            width: 300px;
+            height: 50px;
+        }
+        .Module{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-bottom: 5px;
+        }
+        .Zurück{
+            padding-top: 20px;
+        }
+        .Registrieren{
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <p>Medi+</p>
+    </nav>
+
+    <div class="Module">
+        <p><b>Bei Medi+ anmelden</b></p>
+    </div>
+
+    <div class="input-abschicken">
+        <form action="/senden" method="post">
+            <input type="text" name="username" placeholder="Gib deinen Nutzernamen ein:">
+            <input type="password" name="password" placeholder="Gib dein Passwort ein:"> <br>
+            <button type="submit">Abschicken</button>
+        </form>
+    </div>
+
+    <form class="Registrieren"  action="/registrieren" method="post">
+        <button type="submit">Noch kein Konto? Hier registieren?</button>
+    </form>
+
+    <form class="Zurück"  action="/zurueck" method="post">
+        <button type="submit">Zurück gehen</button>
+    </form>
+
+</body>
+</html>

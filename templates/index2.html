@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hauptmenü - Medi+</title>
+    <style>
+        body{
+            background-color: aqua;
+        }
+        nav{
+            background-color: brown;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 10px;
+        }
+        input{
+            padding-right: 10px;
+        }
+        .input-abschicken{
+            margin-top: 20px;
+            margin-left: 20px;
+            width: 300px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="https://www.google.com">Google</a>
+        <a href="https://www.youtube.com">YouTube</a>
+        <p>Medi+</p>
+    </nav>
+    <div class="Module">
+        <a href="index.html">Moin Moin</a>
+    </div>
+
+    <form action="/anmelden" method="post">
+        <button type="submit">Anmelden bzw. Registrieren</button>
+    </form>
+
+    <div class="input-abschicken">
+        <form action="/save" method="post">
+            <input type="text" name="user_input" placeholder="Gib deinen ID ein:">
+            <input type="text" name="user_input2" placeholder="Gib deinen Namen ein:">
+            <input type="text" name="user_input3" placeholder="Gib dein Alter ein:">
+            <button type="submit">Abschicken</button>
+        </form>
+    </div>
+</body>
+</html>
