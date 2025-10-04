@@ -1,0 +1,59 @@
+body{
+    background-color: darkslategrey;
+}
+nav{
+    background-color: rgba(9, 243, 9, 0.916);
+    border-radius: 5px;
+    margin: 10px;
+    border: solid 5px white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+input{
+    padding-right: 10px;
+    border: solid 2px black;
+    border-radius: 10px;
+    margin-bottom: 4px;
+}
+.input-abschicken{
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 300px;
+    height: 50px;
+    text-align: center;
+}
+.functions {
+    margin-top: 12px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 60px;
+    border: solid 8px brown ;
+    background-color: bisque;
+    border-radius: 20px;       
+}
+.functions:hover {
+    background-color: brown;
+    cursor: pointer;
+            
+}
+.fontart {
+    font-size: 40px;
+    font-family: monospace;
+}
+.container {
+    min-height: 100px;
+    width: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.textart {
+    text-align: center;
+}

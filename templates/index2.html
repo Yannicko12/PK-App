@@ -4,48 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hauptmenü - Medi+</title>
-    <style>
-        body{
-            background-color: aqua;
-        }
-        nav{
-            background-color: brown;
-            border-radius: 5px;
-            margin: 10px;
-            padding: 10px;
-        }
-        input{
-            padding-right: 10px;
-        }
-        .input-abschicken{
-            margin-top: 20px;
-            margin-left: 20px;
-            width: 300px;
-            height: 50px;
-        }
-    </style>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
-    <nav>
-        <a href="https://www.google.com">Google</a>
-        <a href="https://www.youtube.com">YouTube</a>
-        <p>Medi+</p>
+    <nav class="fontart">
+        Medi+
     </nav>
-    <div class="Module">
-        <a href="index.html">Moin Moin</a>
-    </div>
+    <div class="container">
+        <div class="Module fontart">
+            <a href="index.html">Moin Moin</a>
+            <a href="https://www.google.com">Google</a>
+        <a href="https://www.youtube.com">YouTube</a>
+        </div>
 
-    <form action="/anmelden" method="post">
-        <button type="submit">Anmelden bzw. Registrieren</button>
-    </form>
+        <div class="functions fontart">
+            <form action="" method="post">
+                <b>KI-Chatbot</b>
+            </form>
+        </div>
 
-    <div class="input-abschicken">
-        <form action="/save" method="post">
-            <input type="text" name="user_input" placeholder="Gib deinen ID ein:">
-            <input type="text" name="user_input2" placeholder="Gib deinen Namen ein:">
-            <input type="text" name="user_input3" placeholder="Gib dein Alter ein:">
-            <button type="submit">Abschicken</button>
+        <div class="functions fontart">
+            <form action="" method="post">
+                <b>Schritte</b>
+            </form>
+        </div>
+
+        <form class="textart"     action="/anmelden" method="post">
+            <button type="submit">Anmelden bzw. Registrieren</button>
         </form>
+
+        <div class="input-abschicken">
+            <form action="/save" method="post">
+                <input type="text" name="user_input" placeholder="Gib deinen ID ein:">
+                <input type="text" name="user_input2" placeholder="Gib deinen Namen ein:">
+                <input type="text" name="user_input3" placeholder="Gib dein Alter ein:"> <br>
+                <button type="submit">Abschicken</button>
+            </form>
+        </div>
     </div>
+    
+    
 </body>
 </html>
